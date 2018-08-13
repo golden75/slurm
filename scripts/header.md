@@ -10,7 +10,7 @@
 #SBATCH --partition=general
 #SBATCH --qos=general
 #SBATCH --mail-type=ALL
-#SBATCH --mail-user=neranjan.perera@uconn.edu
+#SBATCH --mail-user=
 #SBATCH -o ../log_files/%x_%A.out
 #SBATCH -e ../log_files/%x_%A.err
 </pre>
