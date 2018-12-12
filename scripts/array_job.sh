@@ -6,11 +6,11 @@
 #SBATCH --mem=30G
 #SBATCH --partition=general
 #SBATCH --qos=general
-#SBATCH --array=[1-8]%8
+#SBATCH --array=[1-8]%2
 ##SBATCH --mail-type=ALL
 ##SBATCH --mail-user=neranjan.perera@uconn.edu
-#SBATCH -o ../log_files/%x_%A_%a.out
-#SBATCH -e ../log_files/%x_%A_%a.err
+#SBATCH -o %x_%A_%a.out
+#SBATCH -e %x_%A_%a.err
 
 hg19=/home/FCAM/nperera/Tutorial/variant_detection_GATK/Illumina/Analysis_3/hg19/hg19.fa
 R1="_1.fastq"
